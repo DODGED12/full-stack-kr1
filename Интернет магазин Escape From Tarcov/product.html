@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Товар — Reshala market</title>
+    <meta name="description" content="Описание каждого товара" />
+    <!--показываем где брать стиль css и добавляем шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--подключаем шрифт Oswald размр: 500*700-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!--создаём шапку сайта-->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Reshala market</a>
+        <nav class="site-nav" aria-label="Основное меню">
+          <!--лист пунктов меню-->
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="product.html" aria-current="page">Товар</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Связь</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- оформление страницы -->
+      <section class="page-header">
+        <div class="page-container">
+          <nav class="breadcrumbs" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="index.html">Главная</a>
+              </li>
+              <li class="breadcrumbs__item">
+                <span class="breadcrumbs__current" aria-current="page"
+                  >Товары</span
+                >
+              </li>
+            </ol>
+          </nav>
+          <h1 class="page-header__title">Товары</h1>
+          <p class="page-header__lead">
+            Все услуги магазина с подробным описанием.
+          </p>
+        </div>
+      </section>
+<!-- карточки -->
+      <div class="page-container">
+        <article class="product-page" id="kappa">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/kappa.jpg"
+              alt="Контейнер Kappa"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Квесты</p>
+            <h2 class="product-page__title">Получение Kappa подсумка</h2>
+            <p class="product-page__description">Передаём Kappa подсумок прямо в рейде.</p>
+            <ul class="product-page__features">
+              <li>Закрываем все квесты, нужные для контейнера Kappa</li>
+              <li>Находим предметы «в рейде» без бега кругами по Таможне</li>
+              <li>Сотрудник прикрывает вас от игроков</li>
+            </ul>
+            <p class="product-page__price">9 999 ₽</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-page" id="quests">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/quest_store.png"
+              alt="Проводка по квестам"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Квесты</p>
+            <h2 class="product-page__title">Сопровождение по квестам</h2>
+            <p class="product-page__description">
+              В пати добавляется сотрудник и обеспечивает полную защиту от других ЧВК.
+            </p>
+            <ul class="product-page__features">
+              <li>Сотрудник заходит в пати и ведёт вас по цели квеста</li>
+              <li>Прикрытие от других ЧВК на всём маршруте</li>
+              <li>Оплата за каждый квест отдельно, а не за «всё и сразу»</li>
+            </ul>
+            <p class="product-page__price">от 150 ₽</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-page" id="rubles">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/rub.png"
+              alt="Игровые рубли"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Услуги</p>
+            <h2 class="product-page__title">Рубли</h2>
+            <p class="product-page__description">
+              Выдача игровых рублей производится непосредственно в рейде с нашим сотрудником.
+            </p>
+            <ul class="product-page__features">
+              <li>Выдача прямо в рейде вместе с нашим сотрудником</li>
+              <li>Подходит для игроков PvE</li>
+              <li>Сумма согласуется заранее</li>
+              <li>Покупка от 100 000 игровых рублей</li>
+            </ul>
+            <p class="product-page__price">1 000 ₽</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-page" id="gear">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/gear.png"
+              alt="Гиры"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Услуги</p>
+            <h2 class="product-page__title">Снаряжение</h2>
+            <p class="product-page__description">
+              Выдача снаряжения производится непосредственно в рейде с нашим сотрудником.
+            </p>
+            <ul class="product-page__features">
+              <li>Выдача в рейде с нашим сотрудником</li>
+              <li>Подбираем комплект под ваш уровень и бюджет</li>
+              <li>Цена зависит от комплекта, базовый набор от 300 ₽</li>
+            </ul>
+            <p class="product-page__price">от 300 ₽</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-page" id="pvp">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/pvp.jpg"
+              alt="Тренировка PvP"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Обучение</p>
+            <h2 class="product-page__title">Тренер PvP</h2>
+            <p class="product-page__description">
+              Тренировка проводится в Арене на выделенном сервере. После вместе с инструктором переходите в полноценный PvP режим.
+            </p>
+            <ul class="product-page__features">
+              <li>Разбор позиций, прицеливания и тактик</li>
+              <li>Учим слышать шаги раньше, чем вы поймаете «Голова, глаза»</li>
+              <li>Тренировка с реальными игроками в PvP</li>
+            </ul>
+            <p class="product-page__price">750 ₽ / час</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-page" id="builds">
+          <div class="product-page__media">
+            <img
+              class="product-page__image"
+              src="images/gun.jpeg"
+              alt="Сборки оружия"
+              width="640"
+              height="360"
+            />
+          </div>
+          <div class="product-page__info">
+            <p class="product-page__category">Обучение</p>
+            <h2 class="product-page__title">Сборки оружия</h2>
+            <p class="product-page__description">
+              Выдача мета сборок на конкретную категорию оружия. Магазин выдаёт метовые сборки только на момент настоящего патча.
+            </p>
+            <ul class="product-page__features">
+              <li>Метовые сборки под нужную категорию оружия</li>
+              <li>Магазин не несёт ответственности за изменение метовых сборок после патча</li>
+              <li>На каждую пушку по несколько видов сборок, на каждый этап игры</li>
+            </ul>
+            <p class="product-page__price">от 500 ₽</p>
+            <div class="product-page__actions">
+              <a class="button button--secondary" href="order.html"
+                >Оставить заявку</a>
+            </div>
+          </div>
+        </article>
+      </div>  
+    </main>
+
+    <footer class="site-footer">
+      <!--подвал-->
+      <div class="site-footer__inner">
+        <p class="site-footer__text">
+          © 2026 Reshala market; Бухарев Е.А.; ЭФБО-12-25.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
