@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reshala market</title>
+    <meta
+      name="description"
+      content="Магазин услуг для игроков Escape from Tarkov"
+    />
+    <!--показываем где брать стиль css и добавляем шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--подключаем шрифт Oswald размр: 500*700-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <!--создаём шапку сайта-->
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">Reshala market</a>
+        <nav class="site-nav" aria-label="Основное меню">
+          <!--лист пунктов меню-->
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">Товар</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">Заявка</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Связь</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <!--autoplay-начинает воспроизведение сразу; loop-повторяет по кругу; playsinline-на телефонах играет прямо на странице,
+        а не открывать плеер на весь экран.-->
+        <video
+          class="hero__video"
+          autoplay
+          muted
+          loop
+          playsinline
+          aria-hidden="true"
+        >
+          <source src="video/hero_back.mp4" type="video/mp4" />
+        </video>
+        <!--содержимое hero -------------------------------------------------------------------- -->
+        <div class="page-container hero__content">
+          <h1 class="hero__title">Магазин товаров и услуг</h1>
+          <p class="hero__text">
+            Квесты, сборки, гиры и обучение. Всё, что нужно, чтобы выйти из
+            рейда живым.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--secondary" href="catalog.html"
+              >Смотреть каталог</a
+            >
+            <a class="button button--secondary" href="order.html"
+              >Оставить заявку</a
+            >
+          </div>
+        </div>
+      </section>
+      <!--раздел приемуществ -------------------------------------------------------------- -->
+      <section class="section" id="advantages">
+        <div class="page-container">
+          <h2 class="section__title">Преимущества</h2>
+          <ul class="advantages">
+            <li class="advantage">
+              <h3 class="advantage__title">Быстрый ответ</h3>
+              <p class="advantage__text">Отвечаем на заявки в течение вайпа</p>
+            </li>
+            <li class="advantage">
+              <h3 class="advantage__title">Удобная выдача</h3>
+              <p class="advantage__text">
+                Выдача товара происходит, в отличие от обещаний Буянова
+              </p>
+            </li>
+            <li class="advantage">
+              <h3 class="advantage__title">Страховка товара</h3>
+              <p class="advantage__text">
+                В случае нападения читеров, производим полную замену товара
+              </p>
+            </li>
+            <li class="advantage">
+              <h3 class="advantage__title">Обучение</h3>
+              <p class="advantage__text">
+                Обучение проводится под руководством инструктора на выделенных серверах с имитацией реального PvP
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--раздел популярных услуг ------------------------------------------------------------------------------- -->
+      <section class="section section--alt" id="popular">
+        <div class="page-container">
+          <h2 class="section__title">Популярные услуги</h2>
+          <p class="section__lead">То, что заказывают чаще всего.</p>
+          <ul class="product-grid">
+            <li class="product-grid__item">
+              <article class="product-card">
+                <span class="product-card__badge">ALL</span>
+                <img
+                  class="product-card__image"
+                  src="images/kappa.jpg"
+                  alt="Каппа подсумок"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <div class="product-card__body">
+                  <p class="product-card__category">Квесты</p>
+                  <h3 class="product-card__title">Получение Kappa подсумка</h3>
+                  <p class="product-card__description">
+                    Передаём Kappa подсумок прямо в рейде.
+                  </p>
+                  <p class="product-card__price">9 999 ₽</p>
+                  <a
+                    class="button button--secondary product-card__button"
+                    href="product.html#kappa"
+                    >Подробнее</a
+                  >
+                </div>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product-card">
+                <span class="product-card__badge">ХИТ</span>
+                <img
+                  class="product-card__image"
+                  src="images/rub.png"
+                  alt="Покупка игровых рублей"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <div class="product-card__body">
+                  <p class="product-card__category">Услуги</p>
+                  <h3 class="product-card__title">Рубли</h3>
+                  <p class="product-card__description">
+                    Выдача игровых рублей для игроков PvE
+                  </p>
+                  <p class="product-card__price">1 000 ₽</p>
+                  <a
+                    class="button button--secondary product-card__button"
+                    href="product.html#rubles"
+                    >Подробнее</a
+                  >
+                </div>
+              </article>
+            </li>
+            <li class="product-grid__item">
+              <article class="product-card">
+                <span class="product-card__badge">PvP</span>
+                <img
+                  class="product-card__image"
+                  src="images/pvp.jpg"
+                  alt="Обучение PvP"
+                  width="640"
+                  height="360"
+                  loading="lazy"
+                />
+                <div class="product-card__body">
+                  <p class="product-card__category">Обучение</p>
+                  <h3 class="product-card__title">Обучение PvP</h3>
+                  <p class="product-card__description">
+                    Тренировка проводится в Арене на выделенном сервере. После вместе с инструктором переходите в полноценный PvP режим.
+                  </p>
+                  <p class="product-card__price">750 ₽ / 1 час</p>
+                  <a
+                    class="button button--secondary product-card__button"
+                    href="product.html#pvp"
+                    >Подробнее</a
+                  >
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--блок контактов --------------------------------------------------------------------------------------- -->
+      <section class="section" id="contacts">
+        <div class="page-container">
+          <h2 class="section__title">Контакты</h2>
+          <p class="section__lead">Остались вопросы? Напишите нам.</p>
+          <aside class="contact-box">
+            <div class="contact-box__info">
+              <p class="contact-box__text">Telegram: @SBEU_KOMAR</p>
+              <p class="contact-box__text">E-mail: RESHALAs@gmail.com</p>
+            </div>
+            <a class="button button--secondary" href="contacts.html"
+              >Все контакты</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <!--подвал ------------------------------------------------------------------------------ -->
+      <div class="site-footer__inner">
+        <p class="site-footer__text">
+          © 2026 Reshala market; Бухарев Е.А.; ЭФБО-12-25.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
